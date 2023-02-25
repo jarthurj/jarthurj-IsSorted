@@ -7,6 +7,11 @@ public class IsSorted {
      * @return true if arr is sorted (all the numbers are in order). false if arr is not sorted.
      */
     public boolean checkSort(int[] arr){
-        return false;
+        for(int x=0;x<arr.length-1;x++){
+            if(arr[x+1]<arr[x]){
+                return false;
+            }
+        }
+        return true;
     }
 }
